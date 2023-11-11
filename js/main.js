@@ -18,7 +18,19 @@ new Swiper('.swiper', {
     navigation: {
       nextEl: '.first_slider-swiper-button-next',
       prevEl: '.first_slider-swiper-button-prev',
+    },
+    
+    autoplay: {
+      delay: 4000,
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
     }
+    
+
+
 });
 
 
