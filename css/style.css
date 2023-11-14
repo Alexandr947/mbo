@@ -80,6 +80,20 @@ h4{
   font-size: 18px;
 }
 
+h5{
+  font-family: "Montserrat", Sans-serif ;
+  font-weight: 500;
+  font-size: 20px;
+  color: #333333;
+}
+
+.textlabel{
+  font-family: "Montserrat", Sans-serif ;
+  font-size: 16px;
+}
+
+
+
 body{
   font-family: "Montserrat", Sans-serif ;
   font-size: 18px;
@@ -1202,7 +1216,157 @@ body{
 
 
 
+/* ===========Section mainshop===================== */
 
+.mainshop{
+  padding: 50px  0px;
+  
+}
+
+.mainshop_row{
+  flex-wrap: wrap;
+  gap: 1.6%;
+  
+}
+/* ===========shopsidebar===================== */
+.col_shopsidebar{
+  width: 25%;
+  padding: 10px;
+  box-shadow: 2px 2px 7px rgba(106, 107, 104, 0.3);
+}
+
+
+/*====================*/
+.price_filter_wrap{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 16px;
+}
+
+.price_filter_wrap .range-line{
+  flex-grow: 1;
+  
+  height: 4px;
+  background-color: var(--violet);
+  position: relative;
+}
+
+.range-pointer-left, .range-pointer-right{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--violet);
+  position: absolute;
+  user-select: none;
+  touch-action: none;
+  
+}
+
+.range-pointer-left{
+  left: 0px;
+  top: -10px;
+}
+
+.range-pointer-right{
+  left: 0px;
+  top: -10px;
+}
+
+.price_result{
+  display: flex;
+  margin-top: 16px;
+}
+
+.euro{
+  margin-left: 5px;
+}
+
+.price_between{
+  flex-grow: 1;
+}
+
+.filter_button{
+  background-color: var(--violet);
+  height: 35px;
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 35px;
+  border-radius: 4px;
+  margin-top: 16px;
+}
+
+
+/*====================*/
+
+
+
+
+.col_shopsidebar li{
+  display: flex;
+  align-items: center;
+}
+.col_shopsidebar label{
+  
+  padding-left: 5px;
+}
+
+.col_shopsidebar  h5{
+  margin-bottom: 16px;
+}
+.col_shopsidebar  h5:not(:first-child){
+  margin-top: 24px;
+}
+
+.col_shopsidebar .textlabel{
+  color: var(--lightred);
+  padding: 2px 0px;
+  line-height: 1.5;
+}
+
+.col_shopsidebar .textlabel span{
+  color: var(--blackmhov);
+  padding-left: 5px;
+}
+
+
+/* ===========shopproducts===================== */
+
+
+.col_shopproducts{
+  width: 73.4%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.2%;
+  row-gap: 15px;
+}
+
+.col_shopproducts  .shoprandomly_item{
+
+  width: 31.86%;
+  box-shadow: 2px 2px 7px rgba(106, 107, 104, 0.3);
+
+}
+
+@media (max-width: 768px){
+  .col_shopsidebar{
+    width: 100%;
+    
+  }
+  .col_shopproducts{
+    width: 100%;
+    gap: 2.6%;
+  }
+
+  .col_shopproducts  .shoprandomly_item{
+
+    width: 48.7%;
+  }
+
+
+
+}
 
 
 
