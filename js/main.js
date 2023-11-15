@@ -36,6 +36,7 @@ new Swiper('.first_slider_swiper', {
 new Swiper('.toptrand_swiper',{
   slidesPerView : 2,
   spaceBetween : 10,
+  loop : true,
 
   breakpoints: {
     // when window width is >= 320px
@@ -70,6 +71,7 @@ new Swiper('.toptrand_swiper',{
 new Swiper('.topvibro_swiper',{
   slidesPerView : 2,
   spaceBetween : 10,
+  loop : true,
 
   breakpoints: {
     // when window width is >= 320px
@@ -102,6 +104,7 @@ new Swiper('.topvibro_swiper',{
 new Swiper('.topdong_swiper',{
   slidesPerView : 2,
   spaceBetween : 10,
+  loop : true,
 
   breakpoints: {
     // when window width is >= 320px
@@ -133,6 +136,7 @@ new Swiper('.topdong_swiper',{
 new Swiper('.brandshop_swiper',{
   slidesPerView : 2,
   spaceBetween : 10,
+  loop : true,
 
   breakpoints: {
     // when window width is >= 320px
