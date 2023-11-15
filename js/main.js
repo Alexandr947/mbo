@@ -161,3 +161,101 @@ new Swiper('.brandshop_swiper',{
 
 });
 
+
+new Swiper('.single_swiper',{
+  slidesPerView : 1
+
+,
+      // Navigation arrows
+  navigation: {
+    nextEl: '.single_swiper-button-next',
+    prevEl: '.single_swiper-button-prev',
+  },
+  slideToClickedSlide : true,
+  //autoplay: {delay: 4000},
+  thumbs:{
+    swiper:{
+      el:'.mini_single_swiper',
+      spaceBetween: 25,
+      slidesPerView: 4,
+      slideToClickedSlide : true,
+      mousewheel: {
+        releaseOnEdges: true,
+      },
+      navigation: {
+        nextEl: '.mini_single_swiper-button-next',
+        prevEl: '.mini_single_swiper-button-prev',
+      }
+
+    }
+
+
+  }
+
+
+
+});
+
+
+
+
+//==============TABS==============================//
+
+$('#tab-title-description').click(function(){
+  $('#tab-description').css("display" , "block");
+  $('#tab-additional_information').css("display" , "none");
+  $('#tab-reviews').css("display" , "none");
+
+  
+  $('.info_panel_tabs > li').toggleClass('active_tab', false);
+  $(this).toggleClass('active_tab');
+  
+
+})
+
+
+$('#tab-title-additional_information').click(function(){
+  $('#tab-description').css("display" , "none");
+  $('#tab-additional_information').css("display" , "block");
+  $('#tab-reviews').css("display" , "none");
+
+  $('.info_panel_tabs > li').toggleClass('active_tab', false);
+  $(this).toggleClass('active_tab');
+
+
+
+})
+
+$('#tab-title-reviews').click(function(){
+  $('#tab-description').css("display" , "none");
+  $('#tab-reviews').css("display" , "block");
+  $('#tab-additional_information').css("display" , "none");
+  
+
+  $('.info_panel_tabs > li').toggleClass('active_tab', false);
+  $(this).toggleClass('active_tab');
+
+
+
+})
+
+
+//================Filters======================
+
+$('.sidebar_off').click(function(){
+
+  $('.sidebar_filter_wrap').hide(1000);
+  $('.sidebar_off').hide();
+  $('.sidebar_on').show();
+
+
+
+});
+$('.sidebar_on').click(function(){
+
+  $('.sidebar_filter_wrap').show(1000);
+  $('.sidebar_off').show();
+  $('.sidebar_on').hide();
+  
+
+});
